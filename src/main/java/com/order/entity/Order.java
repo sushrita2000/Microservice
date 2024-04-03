@@ -16,12 +16,50 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name="ORDER_DETAILS")
 public class Order{
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long order_id;
-	private String order_name;
-	private int quantity;
-	private double amount;
+	
+	    @Id
+	    @GeneratedValue(strategy = GenerationType.AUTO)
+	    private Long orderId;
+	   
+	    private String orderName;
+	   
+	    private Integer quantity;
+	    
+	    private Double amount;
+
+		public Long getOrderId() {
+			return orderId;
+		}
+
+		public void setOrderId(Long orderId) {
+			this.orderId = orderId;
+		}
+
+		public String getOrderName() {
+			return orderName;
+		}
+
+		public void setOrderName(String orderName) {
+			this.orderName = orderName;
+		}
+
+		public Integer getQuantity() {
+			return quantity;
+		}
+
+		public void setQuantity(Integer quantity) {
+			this.quantity = quantity;
+		}
+
+		public Double getAmount() {
+			return amount;
+		}
+
+		public void setAmount(Double amount) {
+			this.amount = amount;
+		}
+	    
+	    
 	
 	
 
